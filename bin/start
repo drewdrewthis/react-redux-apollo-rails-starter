@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -euf -o pipefail
+
+bin/start-rails-server & bin/start-react-server
