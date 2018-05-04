@@ -55,3 +55,7 @@ config/initializers/secret_token.rb
 
 ### Vim ###
 Nerd_tree_*
+
+### React-App ###
+/react-app/build/
+/react-app/public/
