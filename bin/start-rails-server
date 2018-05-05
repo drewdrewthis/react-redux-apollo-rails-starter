@@ -2,4 +2,4 @@
 
 set -euf -o pipefail
 
-cd rails-server && rails s && cd ..
+cd rails-graphql-api-boilerplate && rails s && cd ..

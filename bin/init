@@ -2,5 +2,8 @@
 
 set -euf -o pipefail
 
-cd rails-server && bundle install && rails db:create && rake db:migrate && rake db:seed && cd ..
-cd react-app && yarn install && cd ..
+git clone git@github.com:drewdrewthis/rails-graphql-boilerplate.git
+git clone git@github.com:drewdrewthis/react-redux-apollo-boilerplate.git
+
+cd rails-graphql-boilerplate && bundle install && rails db:create && rake db:migrate && rake db:seed && cd ..
+cd react-redux-apollo-boilerplate && yarn install && cd ..
