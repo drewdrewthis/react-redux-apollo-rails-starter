@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euf -o pipefail
+
+cd rails-server && bundle install && rails db:create && rake db:migrate && rake db:seed && cd ..
+cd react-app && yarn install && cd ..

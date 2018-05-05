@@ -2,4 +2,4 @@
 
 set -euf -o pipefail
 
-bin/start-rails-server & bin/start-react-server
+bin/start-rails-server & bin/start-react-server && lsof -ti:3001 | xargs kill
